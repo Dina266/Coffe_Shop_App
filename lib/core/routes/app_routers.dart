@@ -1,6 +1,6 @@
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:flutter/material.dart';
-import '../../features/home/view/splash.dart';
+import '../../features/Home/view/splash.dart';
 
 class AppRouters {
   static Route generateRoute(RouteSettings settings) {
