@@ -7,7 +7,14 @@ class AppRouters {
     switch (settings.name) {
       case Routing.init:
         return MaterialPageRoute(builder: (_) => const Home());
-
+      case Routing.signInRouteName:
+        return MaterialPageRoute(
+          builder: (_) => const SignInView(),
+        );
+      case Routing.signUpRouteName:
+        return MaterialPageRoute(
+          builder: (_) => const SignUpView(),
+        );
 
       default:
         return MaterialPageRoute(
