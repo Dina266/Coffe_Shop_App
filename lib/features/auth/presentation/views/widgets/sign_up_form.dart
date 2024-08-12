@@ -2,8 +2,10 @@ import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:coffe_shop_app/core/utils/app_styles.dart';
 import 'package:coffe_shop_app/core/utils/assets.dart';
 import 'package:coffe_shop_app/core/utils/widgets/custom_button.dart';
+import 'package:coffe_shop_app/features/auth/presentation/view_models/auth/auth_cubit.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/widgets/custom_Text_field_form.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SignUpForm extends StatefulWidget {
@@ -18,6 +20,8 @@ class SignUpForm extends StatefulWidget {
 class _SignInFormState extends State<SignUpForm> {
   final GlobalKey<FormState> formkey = GlobalKey();
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
+
+  late String userName, email, password;
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +90,11 @@ class _SignInFormState extends State<SignUpForm> {
                       height: 30,
                     ),
                     CustomTextFieldForm(
+                      onSaved: (value) {
+                        setState(() {
+                          userName = value!;
+                        });
+                      },
                       label: 'Username',
                       hintText: 'Enter username',
                     ),
@@ -93,6 +102,11 @@ class _SignInFormState extends State<SignUpForm> {
                       height: 15,
                     ),
                     CustomTextFieldForm(
+                      onSaved: (value) {
+                        setState(() {
+                          email = value!;
+                        });
+                      },
                       label: 'Email or phone number',
                       hintText: 'Type your email or phone number',
                     ),
@@ -100,6 +114,11 @@ class _SignInFormState extends State<SignUpForm> {
                       height: 15,
                     ),
                     CustomTextFieldForm(
+                      onSaved: (value) {
+                        setState(() {
+                          password = value!;
+                        });
+                      },
                       label: 'Password',
                       hintText: 'Type your password',
                       suffixIcon: Icons.remove_red_eye_outlined,
@@ -112,6 +131,13 @@ class _SignInFormState extends State<SignUpForm> {
                       onTap: () {
                         if (formkey.currentState!.validate()) {
                           formkey.currentState!.save();
+                          context
+                              .read<AuthCubit>()
+                              .createUserWithEmailAndPassword(
+                                email: email,
+                                password: password,
+                                name: userName,
+                              );
                         } else {
                           autovalidateMode = AutovalidateMode.always;
                         }
@@ -137,7 +163,7 @@ class _SignInFormState extends State<SignUpForm> {
                       height: 15,
                     ),
                     CustomButton(
-                        title: 'SIGN UP', onTap: () => Navigator.pop(context)),
+                        title: 'SIGN IN', onTap: () => Navigator.pop(context)),
                     SizedBox(
                       height: 30,
                     ),

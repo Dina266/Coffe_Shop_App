@@ -3,9 +3,11 @@ import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:coffe_shop_app/core/utils/app_styles.dart';
 import 'package:coffe_shop_app/core/utils/assets.dart';
 import 'package:coffe_shop_app/core/utils/widgets/custom_button.dart';
+import 'package:coffe_shop_app/features/auth/presentation/view_models/auth/auth_cubit.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/widgets/custom_Text_field_form.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/widgets/forget_password_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SignInForm extends StatefulWidget {
@@ -20,7 +22,7 @@ class SignInForm extends StatefulWidget {
 class _SignInFormState extends State<SignInForm> {
   final GlobalKey<FormState> formkey = GlobalKey();
   AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
-
+  late String email, password;
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -88,6 +90,11 @@ class _SignInFormState extends State<SignInForm> {
                       height: 30,
                     ),
                     CustomTextFieldForm(
+                      onSaved: (value) {
+                        setState(() {
+                          email = value!;
+                        });
+                      },
                       label: 'Email or phone number',
                       hintText: 'Type your email or phone number',
                     ),
@@ -95,6 +102,11 @@ class _SignInFormState extends State<SignInForm> {
                       height: 15,
                     ),
                     CustomTextFieldForm(
+                      onSaved: (value) {
+                        setState(() {
+                          password = value!;
+                        });
+                      },
                       label: 'Password',
                       hintText: 'Type your password',
                       suffixIcon: Icons.remove_red_eye_outlined,
@@ -107,6 +119,10 @@ class _SignInFormState extends State<SignInForm> {
                       onTap: () {
                         if (formkey.currentState!.validate()) {
                           formkey.currentState!.save();
+                          context.read<AuthCubit>().loginWithEmailAndPassword(
+                                email: email,
+                                password: password,
+                              );
                         } else {
                           autovalidateMode = AutovalidateMode.always;
                         }

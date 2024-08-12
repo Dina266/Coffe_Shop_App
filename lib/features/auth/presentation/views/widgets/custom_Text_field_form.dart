@@ -7,10 +7,11 @@ class CustomTextFieldForm extends StatefulWidget {
       {super.key,
       required this.label,
       required this.hintText,
-      this.suffixIcon});
+      this.suffixIcon, this.onSaved, });
   final String label;
   final String hintText;
   final IconData? suffixIcon;
+  final void Function(String?)? onSaved;
 
   @override
   State<CustomTextFieldForm> createState() => _CustomTextFieldFormState();
@@ -50,6 +51,7 @@ class _CustomTextFieldFormState extends State<CustomTextFieldForm> {
               }
               return null;
             },
+            onSaved: widget.onSaved,
             obscureText: widget.suffixIcon != null ? isSecure : false,
             decoration: InputDecoration(
               fillColor: Colors.white,
