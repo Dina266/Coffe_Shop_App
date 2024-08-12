@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             ],
           supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
-      initialRoute: Routing.init,
+      initialRoute: Routing.homeScreen,
       onGenerateRoute: AppRouters.generateRoute,
     );
   }
