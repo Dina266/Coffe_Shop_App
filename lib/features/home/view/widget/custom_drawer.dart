@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../core/utils/app_styles.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});

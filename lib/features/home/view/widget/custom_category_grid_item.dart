@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../core/utils/app_styles.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class CustomCategoryGridItem extends StatelessWidget {
   final String image;
@@ -25,13 +23,14 @@ class CustomCategoryGridItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: SvgPicture.asset(image , height: 80,),
+              child: Image.network(image , height: 80,),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 label,
                 style: AppStyle.bold16,
+                textAlign: TextAlign.center,
               ),
             ),
           ],
