@@ -1,9 +1,11 @@
 import 'package:coffe_shop_app/core/routes/routing.dart';
+import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
 import 'package:coffe_shop_app/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:coffe_shop_app/features/splash/presentation/view/splash.dart';
 import 'package:coffe_shop_app/features/home/view/home_screen_body.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/sign_in_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../features/auth/presentation/views/sign_up_view.dart';
 
@@ -27,7 +29,10 @@ class AppRouters {
 
       case Routing.onboarding:
         return MaterialPageRoute(
-          builder: (_) => const OnboardingView(),
+          builder: (_) => BlocProvider(
+            create: (context) => OnboardingCubit(),
+            child: const OnboardingView(),
+          ),
         );
       default:
         return MaterialPageRoute(

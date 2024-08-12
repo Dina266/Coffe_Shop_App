@@ -9,5 +9,6 @@ abstract class AppColors {
   static const darkGreen = Color(0xff024B1F);
   static const iconsColor = Color(0xff007AFF);
   static const shimmerColor = Color(0xffF0F0F0);
+  static const white = Colors.white;
   static const splashBackground = Color(0xffFAD293);
 }

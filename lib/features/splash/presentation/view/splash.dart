@@ -36,6 +36,6 @@ class _SplashState extends State<Splash> {
   }
 
   void handleNavigation() {
-    context.pushReplacementNamed(Routing.homeScreen);
+    context.pushReplacementNamed(Routing.onboarding);
   }
 }
