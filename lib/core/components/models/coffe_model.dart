@@ -12,6 +12,7 @@ class CoffeModel {
   final int roastLevel;
   final String imageUrl;
 
+
   CoffeModel(
       {required this.name,
       required this.description,
