@@ -1,7 +1,6 @@
 import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:coffe_shop_app/core/utils/assets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 abstract class ButtonBarIcons {
@@ -10,50 +9,25 @@ abstract class ButtonBarIcons {
     BlendMode.srcIn,
   );
 
-  static SvgPicture get unselectedHome => SvgPicture.asset(
-        Assets.imagesHome,
-      );
-  static SvgPicture get selectedHome => SvgPicture.asset(
-        Assets.imagesHome,
-        colorFilter: _colorFilter,
-      );
+  static SvgPicture _getIcon(String assetName, {bool isSelected = false}) {
+    return SvgPicture.asset(
+      assetName,
+      colorFilter: isSelected ? _colorFilter : null,
+    );
+  }
 
-  static SvgPicture get unselectedGift => SvgPicture.asset(
-        Assets.imagesGift,
-      );
+  static SvgPicture get unselectedHome => _getIcon(Assets.imagesHome);
+  static SvgPicture get selectedHome => _getIcon(Assets.imagesHome, isSelected: true);
 
-  static SvgPicture get selectedGift => SvgPicture.asset(
-        Assets.imagesGift,
-        colorFilter: _colorFilter,
-      );
-  // scan
-  static SvgPicture get unselectedScan => SvgPicture.asset(
-        Assets.imagesScan,
-      );
+  static SvgPicture get unselectedGift => _getIcon(Assets.imagesGift);
+  static SvgPicture get selectedGift => _getIcon(Assets.imagesGift, isSelected: true);
 
-  static SvgPicture get selectedScan => SvgPicture.asset(
-        Assets.imagesScan,
-        colorFilter: _colorFilter,
-      );
+  static SvgPicture get unselectedScan => _getIcon(Assets.imagesScan);
+  static SvgPicture get selectedScan => _getIcon(Assets.imagesScan, isSelected: true);
 
-  // order
+  static SvgPicture get unselectedOrder => _getIcon(Assets.imagesOrder);
+  static SvgPicture get selectedOrder => _getIcon(Assets.imagesOrder, isSelected: true);
 
-  static SvgPicture get unselectedOrder => SvgPicture.asset(
-        Assets.imagesOrder,
-      );
-
-  static SvgPicture get selectedOrder => SvgPicture.asset(
-        Assets.imagesOrder,
-        colorFilter: _colorFilter,
-      );
-
-  // account
-  static SvgPicture get unselectedAccount => SvgPicture.asset(
-        Assets.imagesAccount,
-      );
-
-  static SvgPicture get selectedAccount => SvgPicture.asset(
-        Assets.imagesAccount,
-        colorFilter: _colorFilter,
-      );
+  static SvgPicture get unselectedAccount => _getIcon(Assets.imagesAccount);
+  static SvgPicture get selectedAccount => _getIcon(Assets.imagesAccount, isSelected: true);
 }
