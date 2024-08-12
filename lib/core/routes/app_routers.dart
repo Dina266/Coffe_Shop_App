@@ -1,4 +1,5 @@
 import 'package:coffe_shop_app/core/routes/routing.dart';
+import 'package:coffe_shop_app/features/home/presentation/view/splash.dart';
 import 'package:coffe_shop_app/features/home/view/home.dart';
 import 'package:coffe_shop_app/features/home/view/home_screen_body.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +8,7 @@ class AppRouters {
 
     switch (settings.name) {
       case Routing.init:
-        return MaterialPageRoute(builder: (_) => const Home());
+        return MaterialPageRoute(builder: (_) => const Splash());
 
       case Routing.homeScreen:
         return MaterialPageRoute(builder: (_) => const HomeScreenBody());

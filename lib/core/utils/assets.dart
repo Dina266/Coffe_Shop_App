@@ -82,8 +82,8 @@ class Assets {
   static const String imagesShopping = "assets/images/shopping.svg";
 
   /// Assets for imagesSplashBackground
-  /// assets/images/splash_background.svg
-  static const String imagesSplashBackground = "assets/images/splash_background.svg";
+  /// assets/images/splash_background.png
+  static const String imagesSplashBackground = "assets/images/splash_background.png";
 
   /// Assets for imagesTransaction
   /// assets/images/transaction.svg
