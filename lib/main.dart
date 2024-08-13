@@ -1,3 +1,4 @@
+import 'package:coffe_shop_app/core/cache/cache_helper.dart';
 import 'package:coffe_shop_app/core/components/coffe_cubit/cofee_cubit.dart';
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   setUpGetIt();
+  getIt<CacheHelper>().init();
   runApp(const MyApp());
 }
 

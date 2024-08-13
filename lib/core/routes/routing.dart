@@ -4,4 +4,5 @@ class Routing {
   
   static const String signInRouteName = '/sign_in_view';
   static const String signUpRouteName = '/sign_up_view';
+  static const String onboarding = '/onboarding';
 }
