@@ -2,6 +2,7 @@
     <application
         android:label="coffe_shop_app"
         android:name="${applicationName}"
+        android:enableOnBackInvokedCallback="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

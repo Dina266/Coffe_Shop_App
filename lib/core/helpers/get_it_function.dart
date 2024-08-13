@@ -1,3 +1,4 @@
+import 'package:coffe_shop_app/core/cache/cache_helper.dart';
 import 'package:coffe_shop_app/core/services/firebase_auth_service.dart';
 import 'package:get_it/get_it.dart';
 
@@ -15,4 +16,6 @@ void setUpGetIt() {
       firebaseAuthService: getIt.get<FirebaseAuthService>(),
     ),
   );
+
+  getIt.registerLazySingleton(() => CacheHelper());
 }

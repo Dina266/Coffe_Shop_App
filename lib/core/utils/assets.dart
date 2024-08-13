@@ -1,6 +1,6 @@
 class Assets {
   Assets._();
-
+  
   /// Assets for imagesAccount
   /// assets/images/account.svg
   static const String imagesAccount = "assets/images/account.svg";
@@ -53,17 +53,17 @@ class Assets {
   /// assets/images/no_item.svg
   static const String imagesNoItem = "assets/images/no_item.svg";
 
-  /// Assets for imagesOnboarding1
-  /// assets/images/onboarding1.svg
-  static const String imagesOnboarding1 = "assets/images/onboarding1.svg";
+  /// Assets for imagesOnboardingOne
+  /// assets/images/onboarding_one.png
+  static const String imagesOnboardingOne = "assets/images/onboarding_one.png";
 
-  /// Assets for imagesOnboarding2
-  /// assets/images/onboarding2.svg
-  static const String imagesOnboarding2 = "assets/images/onboarding2.svg";
+  /// Assets for imagesOnboardingThree
+  /// assets/images/onboarding_three.png
+  static const String imagesOnboardingThree = "assets/images/onboarding_three.png";
 
-  /// Assets for imagesOnboarding3
-  /// assets/images/onboarding3.svg
-  static const String imagesOnboarding3 = "assets/images/onboarding3.svg";
+  /// Assets for imagesOnboardingTwo
+  /// assets/images/onboarding_two.png
+  static const String imagesOnboardingTwo = "assets/images/onboarding_two.png";
 
   /// Assets for imagesOrder
   /// assets/images/order.svg
@@ -89,8 +89,8 @@ class Assets {
   /// assets/images/splash_background.png
   static const String imagesSplashBackground = "assets/images/splash_background.png";
 
-
   /// Assets for imagesTransaction
   /// assets/images/transaction.svg
   static const String imagesTransaction = "assets/images/transaction.svg";
 }
+
