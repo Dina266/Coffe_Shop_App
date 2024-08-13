@@ -1,4 +1,6 @@
+import 'package:coffe_shop_app/core/cache/cache_helper.dart';
 import 'package:coffe_shop_app/core/helpers/extentions.dart';
+import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:coffe_shop_app/core/utils/app_styles.dart';
@@ -6,6 +8,8 @@ import 'package:coffe_shop_app/features/onboarding/presentation/view/widgets/onb
 import 'package:coffe_shop_app/features/onboarding/presentation/view/widgets/onboarding_page_view.dart';
 import 'package:coffe_shop_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/cache/cache_keys.dart';
 
 class OnboardingView extends StatelessWidget {
   const OnboardingView({super.key});
@@ -24,6 +28,7 @@ class OnboardingView extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {
                     context.pushReplacementNamed(Routing.signInRouteName);
+                    getIt<CacheHelper>().saveData(key: CacheKeys.onboardingKey, value: true);
                   },
                   child: Text(
                     S.of(context).skip,

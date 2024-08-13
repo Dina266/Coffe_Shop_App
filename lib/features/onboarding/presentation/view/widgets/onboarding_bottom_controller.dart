@@ -22,7 +22,7 @@ class OnboardingBottomController extends StatelessWidget {
           ),
         ),
         OnboardingCustomButton(
-          onPressed: OnboardingCubit.of(context).nextPage,
+          onPressed: ()=> OnboardingCubit.of(context).nextPage(context),
         ),
       ],
     );
