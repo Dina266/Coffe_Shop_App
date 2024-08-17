@@ -1,5 +1,7 @@
+import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/widgets/sign_in_view_body.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -21,6 +23,13 @@ class SignInBlocConsumerBody extends StatelessWidget {
             context,
             state.errorMessage,
           );
+        }
+        if (state is AuthSuccess) {
+          if (FirebaseAuth.instance.currentUser!.emailVerified) {
+            Navigator.pushReplacementNamed(context, Routing.homeScreen);
+          } else {
+            showMessageSnack(context, 'this email is not verified');
+          }
         }
       },
       builder: (context, state) {

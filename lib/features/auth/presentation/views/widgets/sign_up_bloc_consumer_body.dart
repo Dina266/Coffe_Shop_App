@@ -22,6 +22,9 @@ class signUpBlocConsumerBody extends StatelessWidget {
             state.errorMessage,
           );
         }
+        if (state is AuthSuccess) {
+          showMessageSnack(context, 'send link to verfiy your email');
+        }
       },
       builder: (context, state) {
         return ModalProgressHUD(
