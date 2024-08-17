@@ -3,13 +3,22 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../utils/errors/failure.dart';
 
 class FirebaseAuthService {
+  final user = FirebaseAuth.instance;
+
+  Future<void> emailVerification() async {
+    try {
+      await user.currentUser!.sendEmailVerification();
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
   Future<Either<Failure, User>> createUserWithEmailAndPassword({
     required String email,
     required String password,
   }) async {
     try {
-      final credential =
-          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      final credential = await user.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
@@ -31,7 +40,7 @@ class FirebaseAuthService {
     required String password,
   }) async {
     try {
-      final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+      final credential = await user.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
