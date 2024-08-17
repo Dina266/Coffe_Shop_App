@@ -2,6 +2,8 @@ import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:coffe_shop_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/routes/routing.dart';
+
 class ForgetPawssordWidget extends StatelessWidget {
   const ForgetPawssordWidget({super.key});
 
@@ -19,9 +21,14 @@ class ForgetPawssordWidget extends StatelessWidget {
         SizedBox(
           width: 5,
         ),
-        Text(
-          ' Reset Here',
-          style: AppStyle.medium16.copyWith(color: AppColors.primaryColor),
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, Routing.forgetPass);
+          },
+          child: Text(
+            ' Reset Here',
+            style: AppStyle.medium16.copyWith(color: AppColors.primaryColor),
+          ),
         ),
       ],
     );
