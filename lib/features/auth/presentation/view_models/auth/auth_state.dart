@@ -13,6 +13,8 @@ final class AuthSuccess extends AuthState {
   AuthSuccess({required this.user});
 }
 
+final class AuthSuceessResetPassword extends AuthState {}
+
 final class AuthFailure extends AuthState {
   final String errorMessage;
 

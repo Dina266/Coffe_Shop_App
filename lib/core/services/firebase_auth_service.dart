@@ -56,4 +56,12 @@ class FirebaseAuthService {
       );
     }
   }
+
+  Future<void> resetPassword({required String email}) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+    } catch (e) {
+      AuthFailure('somthing went wrong');
+    }
+  }
 }

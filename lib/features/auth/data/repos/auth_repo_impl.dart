@@ -45,4 +45,9 @@ class AuthRepoImpl implements AuthRepo {
       },
     );
   }
+
+  @override
+  Future<void> resetPassword({required String email}) async {
+    await firebaseAuthService.resetPassword(email: email);
+  }
 }

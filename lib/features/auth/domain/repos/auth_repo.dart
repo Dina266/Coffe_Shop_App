@@ -14,4 +14,6 @@ abstract class AuthRepo {
     required String password,
     required String name,
   });
+
+  Future<void> resetPassword({required String email});
 }

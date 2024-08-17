@@ -1,4 +1,5 @@
 import 'package:coffe_shop_app/core/routes/routing.dart';
+import 'package:coffe_shop_app/features/auth/presentation/views/forget_pass_view.dart';
 import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
 import 'package:coffe_shop_app/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:coffe_shop_app/features/splash/presentation/view/splash.dart';
@@ -33,6 +34,10 @@ class AppRouters {
             create: (context) => OnboardingCubit(),
             child: const OnboardingView(),
           ),
+        );
+      case Routing.forgetPass:
+        return MaterialPageRoute(
+          builder: (_) => ForgetPassView(),
         );
       default:
         return MaterialPageRoute(
