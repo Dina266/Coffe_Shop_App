@@ -1,19 +1,20 @@
+import 'package:coffe_shop_app/features/home/data/models/coffe_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../controller/coffe_cubit/cofee_cubit.dart';
 import '../../../../../core/utils/app_styles.dart';
 import 'custom_category_grid_item.dart';
 
 class CustomCategoryGrid extends StatelessWidget {
   final bool isLoading;
   final String title;
+  final List<CoffeModel> coffeModel;
 
+  
   const CustomCategoryGrid(
-      {super.key, this.isLoading = true, required this.title});
+      {super.key, this.isLoading = true, required this.title, required this.coffeModel});
 
   @override
   Widget build(BuildContext context) {
-    var coffeModel = BlocProvider.of<CofeeCubit>(context).coffeeModel;
+    
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(

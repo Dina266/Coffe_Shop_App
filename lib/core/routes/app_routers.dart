@@ -22,7 +22,7 @@ class AppRouters {
       case Routing.homeScreen:
         return MaterialPageRoute(
             builder: (_) => BlocProvider(
-                  create: (context) => CofeeCubit(homeRepoImpl: getIt<HomeRepoImpl>()),
+                  create: (context) => CofeeCubit(homeRepoImpl: getIt<HomeRepoImpl>())..getCoffee(),
                   child: const HomeScreenBody(),
                 ));
 

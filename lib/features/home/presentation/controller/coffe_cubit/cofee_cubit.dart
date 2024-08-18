@@ -20,10 +20,12 @@ class CofeeCubit extends Cubit<CofeeState> {
       (failureMessage) => emit(
         CofeeFailureState(eMessage: failureMessage),
       ),
-      (coffeModel) {
+      (coffeModelList) {
+        coffeeModel = coffeModelList;
+       
         emit(
           CofeeLoadedState(
-            coffeeModel: coffeModel,
+            coffeeModel: coffeModelList,
           ),
         );
       },
