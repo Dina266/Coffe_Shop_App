@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/components/coffe_cubit/cofee_cubit.dart';
-import '../../../../core/utils/app_styles.dart';
+import '../../controller/coffe_cubit/cofee_cubit.dart';
+import '../../../../../core/utils/app_styles.dart';
 import 'custom_category_grid_item.dart';
 
 class CustomCategoryGrid extends StatelessWidget {

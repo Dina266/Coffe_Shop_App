@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import '../../../../core/utils/app_styles.dart';
+import '../../../../../core/utils/app_styles.dart';
 
 class CustomCategoryGridItem extends StatelessWidget {
   final String image;
