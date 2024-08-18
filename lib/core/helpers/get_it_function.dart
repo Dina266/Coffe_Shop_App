@@ -19,8 +19,8 @@ void setUpGetIt() {
       firebaseAuthService: getIt.get<FirebaseAuthService>(),
     ),
   );
-
   getIt.registerLazySingleton(() => CacheHelper());
+
 
   getIt.registerLazySingleton(() => Dio());
   getIt.registerLazySingleton(() => HomeRepoImpl(dio: getIt<Dio>()));
