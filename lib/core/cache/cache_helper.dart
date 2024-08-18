@@ -1,67 +1,34 @@
+import 'package:coffe_shop_app/core/cache/cache_keys.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CacheHelper {
-  static late SharedPreferences sharedPreferences;
-
-//! Here The Initialize of cache .
-  init() async {
+  late SharedPreferences sharedPreferences;
+  Future<void> init() async {
     sharedPreferences = await SharedPreferences.getInstance();
   }
 
-  String? getDataString({required String key}) {
-    return sharedPreferences.getString(key);
+  Future<void> saveData({required String key, required bool value}) async {
+    await sharedPreferences.setBool(key, value);
   }
 
-//! this method to put data in local database using key
-
-  Future<bool> saveData({required String key, required dynamic value}) async {
-    if (value is bool) {
-      return await sharedPreferences.setBool(key, value);
-    }
-
-    if (value is String) {
-      return await sharedPreferences.setString(key, value);
-    }
-
-    if (value is int) {
-      return await sharedPreferences.setInt(key, value);
-    } else {
-      return await sharedPreferences.setDouble(key, value);
-    }
+  bool getData({required String key}) {
+    return sharedPreferences.getBool(key)??true;
   }
 
-//! this method to get data already saved in local database
-
-  dynamic getData({required String key}) {
-    return sharedPreferences.get(key);
+  Future<void> setCurrentLanguageCode({required String languageCode}) async {
+    sharedPreferences.setString(CacheKeys.currentLanguageCode, languageCode);
   }
 
-//! remove data using specific key
-
-  Future<bool> removeData({required String key}) async {
-    return await sharedPreferences.remove(key);
+  Future<void> setCurrentLanguage({required String language}) async {
+    sharedPreferences.setString(CacheKeys.currentLanguage, language);
   }
 
-//! this method to check if local database contains {key}
-  Future<bool> containsKey({required String key}) async {
-    return sharedPreferences.containsKey(key);
+  String? getCurrentLanguageCode() {
+    return sharedPreferences.getString(CacheKeys.currentLanguageCode);
   }
 
-  Future<bool> clearData({required String key}) async {
-    return sharedPreferences.clear();
-  }
-
-//! this fun to put data in local data base using key
-  Future<dynamic> put({
-    required String key,
-    required dynamic value,
-  }) async {
-    if (value is String) {
-      return await sharedPreferences.setString(key, value);
-    } else if (value is bool) {
-      return await sharedPreferences.setBool(key, value);
-    } else {
-      return await sharedPreferences.setInt(key, value);
-    }
+  String? getCurrentLanguage() {
+    return sharedPreferences.getString(CacheKeys.currentLanguage);
   }
 }
+

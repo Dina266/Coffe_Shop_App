@@ -1,5 +1,5 @@
 import 'package:coffe_shop_app/core/cache/cache_helper.dart';
-import 'package:coffe_shop_app/core/components/coffe_cubit/cofee_cubit.dart';
+import 'package:coffe_shop_app/core/helpers/bloc_observer.dart';
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,6 +17,7 @@ void main() async {
   );
   setUpGetIt();
   getIt<CacheHelper>().init();
+   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
 
@@ -25,20 +26,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => CofeeCubit(),
-      child: MaterialApp(
-        localizationsDelegates: const [
-          S.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: S.delegate.supportedLocales,
-        debugShowCheckedModeBanner: false,
-        initialRoute: Routing.init,
-        onGenerateRoute: AppRouters.generateRoute,
-      ),
+    return MaterialApp(
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
+      debugShowCheckedModeBanner: false,
+      initialRoute: Routing.init,
+      onGenerateRoute: AppRouters.generateRoute,
     );
   }
 }
