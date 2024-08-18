@@ -39,9 +39,15 @@ class AuthRepoImpl implements AuthRepo {
 
     return response.fold(
       (failure) => left(failure),
-      (user) => right(
-        UserModel.fromfirbase(user),
-      ),
+      (user) async {
+        await firebaseAuthService.emailVerification();
+        return right(UserModel.fromfirbase(user));
+      },
     );
+  }
+
+  @override
+  Future<void> resetPassword({required String email}) async {
+    await firebaseAuthService.resetPassword(email: email);
   }
 }
