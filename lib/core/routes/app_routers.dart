@@ -1,7 +1,7 @@
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/forget_pass_view.dart';
-import 'package:coffe_shop_app/features/details/views/details_screen.dart';
+import 'package:coffe_shop_app/features/details/presentation/views/details_screen.dart';
 import 'package:coffe_shop_app/features/home/data/repo/home_repo_impl.dart';
 import 'package:coffe_shop_app/features/home/presentation/controller/coffe_cubit/cofee_cubit.dart';
 import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
@@ -13,6 +13,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../features/auth/presentation/views/sign_up_view.dart';
+import '../../features/details/data/repo/detail_repo_impl.dart';
+import '../../features/details/presentation/controller/detail_cubit/detail_cubit.dart';
 
 class AppRouters {
   static Route generateRoute(RouteSettings settings) {
@@ -48,9 +50,12 @@ class AppRouters {
           builder: (_) => const ForgetPassView(),
         );
       case Routing.detailsScreen:
+      final coffeeID = settings.arguments as int;
         return MaterialPageRoute(
-          builder: (_) => const DetailsScreen(),
-        );
+            builder: (_) => BlocProvider(
+                  create: (context) => DetailCubit(detailRepoImpl: getIt<DetailRepoImpl>())..getCoffeeItem(coffeeID: coffeeID),
+                  child: const DetailsScreen(),
+                ));
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
