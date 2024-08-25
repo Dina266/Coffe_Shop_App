@@ -50,6 +50,7 @@ class CustomCategoryGrid extends StatelessWidget {
                 return CustomCategoryGridItem(
                   image: coffeModel[index].imageUrl,
                   label: coffeModel[index].name,
+                  id: coffeModel[index].id,
                 );
               },
             ),

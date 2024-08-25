@@ -1,6 +1,7 @@
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/forget_pass_view.dart';
+import 'package:coffe_shop_app/features/details/views/details_screen.dart';
 import 'package:coffe_shop_app/features/home/data/repo/home_repo_impl.dart';
 import 'package:coffe_shop_app/features/home/presentation/controller/coffe_cubit/cofee_cubit.dart';
 import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
@@ -44,7 +45,11 @@ class AppRouters {
         );
       case Routing.forgetPass:
         return MaterialPageRoute(
-          builder: (_) => ForgetPassView(),
+          builder: (_) => const ForgetPassView(),
+        );
+      case Routing.detailsScreen:
+        return MaterialPageRoute(
+          builder: (_) => const DetailsScreen(),
         );
       default:
         return MaterialPageRoute(
