@@ -3,11 +3,13 @@ import 'package:coffe_shop_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFieldForm extends StatefulWidget {
-  const CustomTextFieldForm(
-      {super.key,
-      required this.label,
-      required this.hintText,
-      this.suffixIcon, this.onSaved, });
+  const CustomTextFieldForm({
+    super.key,
+    required this.label,
+    required this.hintText,
+    this.suffixIcon,
+    this.onSaved,
+  });
   final String label;
   final String hintText;
   final IconData? suffixIcon;
@@ -67,7 +69,7 @@ class _CustomTextFieldFormState extends State<CustomTextFieldForm> {
                           });
                         },
                         icon: Icon(
-                          widget.suffixIcon,
+                          isSecure ? Icons.visibility_off : widget.suffixIcon,
                         ),
                         color: Colors.black,
                       ),
