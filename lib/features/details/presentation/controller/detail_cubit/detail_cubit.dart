@@ -9,7 +9,7 @@ class DetailCubit extends Cubit<DetailState> {
   DetailCubit({required this.detailRepoImpl}) : super(DetailInitial());
   final DetailRepoImpl detailRepoImpl;
 
-  late List<CoffeModel> coffeeModel;
+  late CoffeModel coffeeModel;
 
   void getCoffeeItem({required int coffeeID}) async {
     emit(DetailLoadingState());

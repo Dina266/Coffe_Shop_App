@@ -1,11 +1,9 @@
 import 'dart:developer';
-
 import 'package:coffe_shop_app/features/details/presentation/controller/detail_cubit/detail_cubit.dart';
-import 'package:coffe_shop_app/features/home/data/models/coffe_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../../home/presentation/view/widget/custom_shimmer_placholder.dart';
+import 'detail_screen_body_item.dart';
 
 class DetailsScreenBody extends StatelessWidget {
   const DetailsScreenBody({super.key});
@@ -31,18 +29,5 @@ class DetailsScreenBody extends StatelessWidget {
         return const ShimmerPlaceholder();
       }
     });
-  }
-}
-
-
-class DetailScreenBodyItem extends StatelessWidget {
-  const DetailScreenBodyItem({super.key, required this.coffeeModel});
-  final List<CoffeModel> coffeeModel;
-
-  @override
-  Widget build(BuildContext context) {
-    return  Center(
-      child: Text(coffeeModel[0].name),
-    );
   }
 }

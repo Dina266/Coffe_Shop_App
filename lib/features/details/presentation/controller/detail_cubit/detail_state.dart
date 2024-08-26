@@ -7,7 +7,7 @@ final class DetailInitial extends DetailState {}
 final class DetailLoadingState extends DetailState {}
 
 final class DetailLoadedState extends DetailState {
-  final List<CoffeModel> coffeModel;
+  final CoffeModel coffeModel;
 
   DetailLoadedState({required this.coffeModel});
 }

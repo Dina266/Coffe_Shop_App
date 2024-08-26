@@ -1,10 +1,8 @@
 
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/helpers/extentions.dart';
 import '../../../../../core/utils/app_styles.dart';
-import '../../../../details/presentation/controller/detail_cubit/detail_cubit.dart';
 
 class CustomCategoryGridItem extends StatelessWidget {
   final String image;
