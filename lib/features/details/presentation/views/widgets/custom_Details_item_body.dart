@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import '../../../../home/data/models/coffe_model.dart';
+import 'custom_buttons.dart';
 import 'custom_drop_down_menu.dart';
 import 'custom_incremental_widget.dart';
 
@@ -73,7 +74,12 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
           ),
         ),
         CustomDropDownMenu(items: creamers, val: creamer),
+        const SizedBox(
+          height: 24,
+        ),
+        CustomButtons(coffeModel: widget.coffeeModel,)
       ],
     );
   }
 }
+
