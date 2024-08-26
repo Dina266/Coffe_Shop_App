@@ -26,9 +26,12 @@ class OnboardingView extends StatelessWidget {
               Align(
                 alignment: AlignmentDirectional.topEnd,
                 child: TextButton(
-                  onPressed: () {
-                    context.pushReplacementNamed(Routing.signInRouteName);
-                    getIt<CacheHelper>().saveData(key: CacheKeys.onboardingKey, value: true);
+                  onPressed: () async {
+                    await getIt<CacheHelper>()
+                        .saveData(key: CacheKeys.onboardingKey, value: true);
+                    if (context.mounted) {
+                      context.pushReplacementNamed(Routing.signInRouteName);
+                    }
                   },
                   child: Text(
                     S.of(context).skip,

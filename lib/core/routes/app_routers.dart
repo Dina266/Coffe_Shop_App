@@ -21,10 +21,12 @@ class AppRouters {
 
       case Routing.homeScreen:
         return MaterialPageRoute(
-            builder: (_) => BlocProvider(
-                  create: (context) => CofeeCubit(homeRepoImpl: getIt<HomeRepoImpl>())..getCoffee(),
-                  child: const HomeScreenBody(),
-                ));
+          builder: (_) => BlocProvider(
+            create: (context) =>
+                CofeeCubit(homeRepoImpl: getIt<HomeRepoImpl>())..getCoffee(),
+            child: const HomeScreenBody(),
+          ),
+        );
 
       case Routing.signInRouteName:
         return MaterialPageRoute(
