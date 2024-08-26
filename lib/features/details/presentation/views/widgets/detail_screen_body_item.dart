@@ -19,9 +19,9 @@ class DetailScreenBodyItem extends StatelessWidget {
               Image.network(coffeeModel.imageUrl,
                   height: 100), // Replace with your image asset
               const SizedBox(width: 8),
-              const Text(
-                'Pumpkin Spice Latte',
-                style: TextStyle(fontSize: 24, color: Colors.white),
+              Text(
+                coffeeModel.name,
+                style: const TextStyle(fontSize: 24, color: Colors.white),
               ),
             ],
           ),

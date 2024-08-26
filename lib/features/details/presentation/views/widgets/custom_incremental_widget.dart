@@ -38,13 +38,9 @@ class CustomIncrementalItems extends StatelessWidget {
                   subTitle,
                   style: AppStyle.semiBold16,
                 ),
-                const SizedBox(
-                  width: 1,
-                ),
+                
                 QuantityCounter(),
-                const SizedBox(
-                  width: 1,
-                )
+                
               ],
             ),
           ),
