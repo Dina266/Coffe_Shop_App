@@ -10,7 +10,7 @@ class CustomDetailsItem extends StatefulWidget {
 
   const CustomDetailsItem({super.key, required this.coffeeModel});
   @override
-  _CustomDetailsItemState createState() => _CustomDetailsItemState();
+  State<CustomDetailsItem> createState() => _CustomDetailsItemState();
 }
 
 class _CustomDetailsItemState extends State<CustomDetailsItem> {

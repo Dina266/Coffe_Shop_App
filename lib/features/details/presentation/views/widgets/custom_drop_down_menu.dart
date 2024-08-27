@@ -1,4 +1,5 @@
 
+import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -35,7 +36,7 @@ class _CustomDropDownMenuState extends State<CustomDropDownMenu> {
             }).toList(),
             isExpanded: true,
             icon: const Icon(Icons.arrow_drop_down_circle,
-                color: Color.fromARGB(255, 83, 58, 49)),
+                color: AppColors.primaryColor),
           ),
         ));
   }

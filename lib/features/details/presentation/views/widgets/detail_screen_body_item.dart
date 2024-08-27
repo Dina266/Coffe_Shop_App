@@ -17,7 +17,7 @@ class DetailScreenBodyItem extends StatelessWidget {
           child: Row(
             children: [
               Image.network(coffeeModel.imageUrl,
-                  height: 100), // Replace with your image asset
+                  height: 100), 
               const SizedBox(width: 8),
               Text(
                 coffeeModel.name,

@@ -44,12 +44,9 @@ class CustomButtons extends StatelessWidget {
             ),
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15), 
           ),
-          icon: const Icon(
-            Icons.edit,
-            color: Colors.white,
-          ),
+          
           label: const Text(
-            'Customize',
+            'Cancel',
             style: TextStyle(
               color: Colors.white,
             ),

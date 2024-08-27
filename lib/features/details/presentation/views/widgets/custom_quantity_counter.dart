@@ -1,13 +1,16 @@
 
+import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class QuantityCounter extends StatefulWidget {
+  const QuantityCounter({super.key});
+
   @override
-  _QuantityCounterState createState() => _QuantityCounterState();
+  State<QuantityCounter> createState() => _QuantityCounterState();
 }
 
 class _QuantityCounterState extends State<QuantityCounter> {
-  int _count = 1;
+  int _count = 0;
 
   void _increment() {
     setState(() {
@@ -17,7 +20,7 @@ class _QuantityCounterState extends State<QuantityCounter> {
 
   void _decrement() {
     setState(() {
-      if (_count > 1) {
+      if (_count > 0) {
         _count--;
       }
     });
@@ -37,7 +40,7 @@ class _QuantityCounterState extends State<QuantityCounter> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
-            icon: const Icon(Icons.remove, color: Colors.orange),
+            icon: const Icon(Icons.remove, color: AppColors.splashBackground),
             onPressed: _decrement,
           ),
           Text(
@@ -48,7 +51,7 @@ class _QuantityCounterState extends State<QuantityCounter> {
             ),
           ),
           IconButton(
-            icon: const Icon(Icons.add, color: Colors.orange),
+            icon:  const Icon(Icons.add, color: AppColors.splashBackground),
             onPressed: _increment,
           ),
         ],
