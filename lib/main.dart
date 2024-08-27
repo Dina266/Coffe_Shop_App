@@ -17,7 +17,7 @@ void main() async {
   );
   setUpGetIt();
   getIt<CacheHelper>().init();
-   Bloc.observer = MyBlocObserver();
+  Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
 

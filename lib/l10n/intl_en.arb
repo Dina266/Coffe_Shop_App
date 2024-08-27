@@ -6,5 +6,24 @@
     "onboardingThreeTitle":"Who doesn't love rewards? We LOVE rewards!",
     "onboardingThreeDesc":"If you're like us you love getting freebies and rewards! That's why we have the best reward program in the coffee game!",
     "next":"Next",
-    "skip":"Skip"
+    "skip":"Skip",
+    "whats_included": "What's included",
+    "cupSize": "Cup Size",
+    "addIns": "Add-Ins",
+    "sweetener": "Sweetener",
+    "sweetener_subtitle": "Splenda® packet",
+    "flavor": "Flavor",
+    "flavorSubtitle": "Pumpkin Spice",
+    "creamer": "Creamer",
+    "cupSizeSmall": "Small",
+    "cupSizeMedium": "Medium",
+    "cupSizeLarge": "Large",
+    "addInsNormalIce": "Normal Ice",
+    "addInsMoreIce": "More Ice",
+    "addInsLessIce": "Less Ice",
+    "creamerOatmilk": "Oatmilk",
+    "creamerOaramel": "Caramel",
+    "creamerVanilla": "Vanilla",
+    "cancel":"Cancel"
 }
+

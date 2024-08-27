@@ -6,7 +6,24 @@
     "onboardingThreeTitle":"من لا يحب المكافآت؟ نحن نحب المكافآت!",
     "onboardingThreeDesc":"إذا كنت مثلنا تحب الحصول على الهدايا المجانية والمكافآت! لهذا السبب لدينا أفضل برنامج مكافآت في لعبة القهوة!",
     "next":"التالي",
-    "skip":"تخطى"
-
+    "skip":"تخطى",
+    "whats_included": "ماذا يشمل؟",
+    "cupSize": "حجم الكوب",
+    "addIns": "الإضافات",
+    "sweetener": "المُحَلّي",
+    "sweetenerSubtitle": "كيس سبيندا",
+    "flavor": "النكهة",
+    "flavorSubtitle": "بهارات اليقطين",
+    "creamer": "كريمه",
+    "cupSizeSmall": "صغير",
+    "cupSizeMedium": "متوسط",
+    "cupSizeSarge": "كبير",
+    "addInsNormalIce": "ثلج عادي",
+    "addInsMoreIce": "المزيد من الثلج",
+    "addInsLessIce": "ثلج أقل",
+    "creamerOatmilk": "حليب الشوفان",
+    "creamerCaramel": "كراميل",
+    "creamerVanilla": "فانيليا",
+    "cancel":"الغاء"
 
 }

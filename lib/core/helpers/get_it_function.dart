@@ -7,6 +7,7 @@ import 'package:logger/logger.dart';
 
 import '../../features/auth/data/repos/auth_repo_impl.dart';
 import '../../features/auth/domain/repos/auth_repo.dart';
+import '../../features/details/data/repo/detail_repo_impl.dart';
 
 final getIt = GetIt.asNewInstance();
 
@@ -24,6 +25,7 @@ void setUpGetIt() {
 
   getIt.registerLazySingleton(() => Dio());
   getIt.registerLazySingleton(() => HomeRepoImpl(dio: getIt<Dio>()));
+  getIt.registerLazySingleton(() => DetailRepoImpl(dio: getIt<Dio>()));
 
   getIt.registerLazySingleton(() =>Logger());
   
