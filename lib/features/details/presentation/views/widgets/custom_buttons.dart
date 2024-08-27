@@ -35,7 +35,7 @@ class CustomButtons extends StatelessWidget {
         const SizedBox(width: 16),
         ElevatedButton.icon(
           onPressed: () {
-            // TODO
+            Navigator.pop(context);
           },
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.lightGreen, 
