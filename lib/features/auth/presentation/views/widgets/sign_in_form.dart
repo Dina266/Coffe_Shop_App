@@ -102,15 +102,14 @@ class _SignInFormState extends State<SignInForm> {
                       height: 15,
                     ),
                     CustomTextFieldForm(
-                      onSaved: (value) {
-                        setState(() {
-                          password = value!;
-                        });
-                      },
-                      label: 'Password',
-                      hintText: 'Type your password',
-                      suffixIcon: Icons.remove_red_eye_outlined,
-                    ),
+                        onSaved: (value) {
+                          setState(() {
+                            password = value!;
+                          });
+                        },
+                        label: 'Password',
+                        hintText: 'Type your password',
+                        suffixIcon: Icons.remove_red_eye),
                     SizedBox(
                       height: 30,
                     ),
