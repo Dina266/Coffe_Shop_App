@@ -15,31 +15,43 @@ class CustomDetailsItem extends StatefulWidget {
 }
 
 class _CustomDetailsItemState extends State<CustomDetailsItem> {
-  String cupSize = 'Large';
-  String addIns = 'Normal Ice';
-  String creamer = 'Oatmilk';
+  String cupSize = S.current.cupSizeLarge;
+  String addIns = S.current.addInsNormalIce;
+  String creamer = S.current.creamerOatmilk;
   int sweetenerCount = 0;
   int flavorCount = 0;
 
-  List<String> cupSizes = ['Small', 'Medium', 'Large'];
-  List<String> addInses = ['Normal Ice', 'more Ice', 'Less Ice'];
-  List<String> creamers = ['Oatmilk', 'Carameil', 'Vanilla'];
+  List<String> cupSizes = [
+    S.current.cupSizeSmall,
+    S.current.cupSizeLarge,
+    S.current.cupSizeMedium
+  ];
+  List<String> addInses = [
+    S.current.addInsNormalIce,
+    S.current.addInsMoreIce,
+    S.current.addInsLessIce
+  ];
+  List<String> creamers = [
+    S.current.creamerOatmilk,
+    S.current.creamerCaramel,
+    S.current.creamerVanilla
+  ];
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
-         Padding(
-          padding:const EdgeInsets.all(18.0),
+        Padding(
+          padding: const EdgeInsets.all(18.0),
           child: Text(
             S.of(context).whats_included,
             style: AppStyle.bold18,
           ),
         ),
-         Padding(
-          padding:const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+        Padding(
+          padding: const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-           S.of(context).cupSize,
+            S.of(context).cupSize,
             style: AppStyle.bold16,
           ),
         ),
@@ -47,8 +59,8 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-         Padding(
-          padding:const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+        Padding(
+          padding: const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
             S.of(context).addIns,
             style: AppStyle.bold16,
@@ -58,17 +70,19 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-         CustomIncrementalItems(
-            title: S.of(context).sweetener, subTitle: S.of(context).sweetener_subtitle),
+        CustomIncrementalItems(
+            title: S.of(context).sweetener,
+            subTitle: S.of(context).sweetener_subtitle),
         const SizedBox(
           height: 24,
         ),
-         CustomIncrementalItems(title: S.of(context).flavor, subTitle: "Pumkin Spice"),
+        CustomIncrementalItems(
+            title: S.of(context).flavor, subTitle: "Pumkin Spice"),
         const SizedBox(
           height: 24,
         ),
-         Padding(
-          padding:const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+        Padding(
+          padding: const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
             S.of(context).creamer,
             style: AppStyle.bold16,
@@ -78,9 +92,10 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-        CustomButtons(coffeModel: widget.coffeeModel,)
+        CustomButtons(
+          coffeModel: widget.coffeeModel,
+        )
       ],
     );
   }
 }
-
