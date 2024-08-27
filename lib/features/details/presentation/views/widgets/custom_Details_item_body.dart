@@ -1,3 +1,4 @@
+import 'package:coffe_shop_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import '../../../../home/data/models/coffe_model.dart';
@@ -28,17 +29,17 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        const Padding(
-          padding: EdgeInsets.all(18.0),
+         Padding(
+          padding:const EdgeInsets.all(18.0),
           child: Text(
-            "What's included",
+            S.of(context).whats_included,
             style: AppStyle.bold18,
           ),
         ),
-        const Padding(
-          padding: EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+         Padding(
+          padding:const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-            'Cup Size',
+           S.of(context).cupSize,
             style: AppStyle.bold16,
           ),
         ),
@@ -46,10 +47,10 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-        const Padding(
-          padding: EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+         Padding(
+          padding:const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-            'Add-Ins',
+            S.of(context).addIns,
             style: AppStyle.bold16,
           ),
         ),
@@ -57,19 +58,19 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-        const CustomIncrementalItems(
-            title: "Sweetener", subTitle: "Splenda® packet"),
+         CustomIncrementalItems(
+            title: S.of(context).sweetener, subTitle: S.of(context).sweetener_subtitle),
         const SizedBox(
           height: 24,
         ),
-        const CustomIncrementalItems(title: "Flavor", subTitle: "Pumkin Spice"),
+         CustomIncrementalItems(title: S.of(context).flavor, subTitle: "Pumkin Spice"),
         const SizedBox(
           height: 24,
         ),
-        const Padding(
-          padding: EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+         Padding(
+          padding:const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-            'Creamer',
+            S.of(context).creamer,
             style: AppStyle.bold16,
           ),
         ),

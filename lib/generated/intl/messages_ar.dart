@@ -22,6 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "addIns": MessageLookupByLibrary.simpleMessage("الإضافات"),
+        "addInsLessIce": MessageLookupByLibrary.simpleMessage("ثلج أقل"),
+        "addInsMoreIce":
+            MessageLookupByLibrary.simpleMessage("المزيد من الثلج"),
+        "addInsNormalIce": MessageLookupByLibrary.simpleMessage("ثلج عادي"),
+        "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "creamer": MessageLookupByLibrary.simpleMessage("كريمه"),
+        "creamerOatmilk": MessageLookupByLibrary.simpleMessage("حليب الشوفان"),
+        "creamerVanilla": MessageLookupByLibrary.simpleMessage("فانيليا"),
+        "cupSize": MessageLookupByLibrary.simpleMessage("حجم الكوب"),
+        "cupSizeMedium": MessageLookupByLibrary.simpleMessage("متوسط"),
+        "cupSizeSmall": MessageLookupByLibrary.simpleMessage("صغير"),
+        "flavor": MessageLookupByLibrary.simpleMessage("النكهة"),
+        "flavorSubtitle":
+            MessageLookupByLibrary.simpleMessage("بهارات اليقطين"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "onboardingOneDesc": MessageLookupByLibrary.simpleMessage(
             "تريد مشروبك وتريده على طريقتك لذا كن جريئًا وقم بتخصيص الطريقة التي تجعلك الأكثر سعادة!"),
@@ -35,6 +50,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "لقد صنعنا طريقة سريعة وسهلة لك لطلب قهوتك المفضلة أو الحلويات الخاصة بك بسرعة!"),
         "onboardingTwoTitle": MessageLookupByLibrary.simpleMessage(
             "لا وقت للهدر عندما تحتاج إلى قهوتك"),
-        "skip": MessageLookupByLibrary.simpleMessage("تخطى")
+        "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
+        "sweetener": MessageLookupByLibrary.simpleMessage("المُحَلّي"),
+        "whats_included": MessageLookupByLibrary.simpleMessage("ماذا يشمل؟")
       };
 }

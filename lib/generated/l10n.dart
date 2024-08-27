@@ -129,6 +129,186 @@ class S {
       args: [],
     );
   }
+
+  /// `What's included`
+  String get whats_included {
+    return Intl.message(
+      'What\'s included',
+      name: 'whats_included',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cup Size`
+  String get cupSize {
+    return Intl.message(
+      'Cup Size',
+      name: 'cupSize',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add-Ins`
+  String get addIns {
+    return Intl.message(
+      'Add-Ins',
+      name: 'addIns',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sweetener`
+  String get sweetener {
+    return Intl.message(
+      'Sweetener',
+      name: 'sweetener',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Splenda® packet`
+  String get sweetener_subtitle {
+    return Intl.message(
+      'Splenda® packet',
+      name: 'sweetener_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flavor`
+  String get flavor {
+    return Intl.message(
+      'Flavor',
+      name: 'flavor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pumpkin Spice`
+  String get flavorSubtitle {
+    return Intl.message(
+      'Pumpkin Spice',
+      name: 'flavorSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Creamer`
+  String get creamer {
+    return Intl.message(
+      'Creamer',
+      name: 'creamer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Small`
+  String get cupSizeSmall {
+    return Intl.message(
+      'Small',
+      name: 'cupSizeSmall',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medium`
+  String get cupSizeMedium {
+    return Intl.message(
+      'Medium',
+      name: 'cupSizeMedium',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Large`
+  String get cupSizeLarge {
+    return Intl.message(
+      'Large',
+      name: 'cupSizeLarge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Normal Ice`
+  String get addInsNormalIce {
+    return Intl.message(
+      'Normal Ice',
+      name: 'addInsNormalIce',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More Ice`
+  String get addInsMoreIce {
+    return Intl.message(
+      'More Ice',
+      name: 'addInsMoreIce',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Less Ice`
+  String get addInsLessIce {
+    return Intl.message(
+      'Less Ice',
+      name: 'addInsLessIce',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Oatmilk`
+  String get creamerOatmilk {
+    return Intl.message(
+      'Oatmilk',
+      name: 'creamerOatmilk',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Caramel`
+  String get creamerOaramel {
+    return Intl.message(
+      'Caramel',
+      name: 'creamerOaramel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vanilla`
+  String get creamerVanilla {
+    return Intl.message(
+      'Vanilla',
+      name: 'creamerVanilla',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
