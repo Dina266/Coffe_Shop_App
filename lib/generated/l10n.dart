@@ -281,10 +281,10 @@ class S {
   }
 
   /// `Caramel`
-  String get creamerOaramel {
+  String get creamerCaramel {
     return Intl.message(
       'Caramel',
-      name: 'creamerOaramel',
+      name: 'creamerCaramel',
       desc: '',
       args: [],
     );
