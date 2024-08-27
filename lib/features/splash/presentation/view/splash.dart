@@ -29,9 +29,13 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       body: Stack(
         children: [
-          Image.asset(Assets.imagesSplashBackground),
-          Align(
-            alignment: Alignment.center,
+          Image.asset(
+            Assets.imagesSplashBackground,
+            height: double.infinity,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
+          Center(
             child: SvgPicture.asset(Assets.imagesAppIcon),
           ),
         ],
