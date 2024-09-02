@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "addInsNormalIce": MessageLookupByLibrary.simpleMessage("ثلج عادي"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "creamer": MessageLookupByLibrary.simpleMessage("كريمه"),
+        "creamerCaramel": MessageLookupByLibrary.simpleMessage("كراميل"),
         "creamerOatmilk": MessageLookupByLibrary.simpleMessage("حليب الشوفان"),
         "creamerVanilla": MessageLookupByLibrary.simpleMessage("فانيليا"),
         "cupSize": MessageLookupByLibrary.simpleMessage("حجم الكوب"),
