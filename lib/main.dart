@@ -1,10 +1,12 @@
 import 'package:coffe_shop_app/core/cache/cache_helper.dart';
 import 'package:coffe_shop_app/core/helpers/bloc_observer.dart';
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
+import 'package:coffe_shop_app/core/utils/stripe_keys.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'core/routes/app_routers.dart';
 import 'core/routes/routing.dart';
 import 'firebase_options.dart';
@@ -18,6 +20,8 @@ void main() async {
   setUpGetIt();
   getIt<CacheHelper>().init();
   Bloc.observer = MyBlocObserver();
+  Stripe.publishableKey = StripeKeys.publishableKey;
+  
   runApp(const MyApp());
 }
 

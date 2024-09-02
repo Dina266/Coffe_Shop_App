@@ -16,8 +16,7 @@ class DetailScreenBodyItem extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 16.0),
           child: Row(
             children: [
-              Image.network(coffeeModel.imageUrl,
-                  height: 100), 
+              Image.network(coffeeModel.imageUrl, height: 100),
               const SizedBox(width: 8),
               Text(
                 coffeeModel.name,
@@ -26,7 +25,8 @@ class DetailScreenBodyItem extends StatelessWidget {
             ],
           ),
         ),
-        Expanded(child: CustomDetailsItem(coffeeModel: coffeeModel))
+        Expanded(child: CustomDetailsItem(coffeeModel: coffeeModel)),
+        const SizedBox(height: 16),
       ],
     );
   }

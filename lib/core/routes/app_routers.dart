@@ -1,6 +1,8 @@
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:coffe_shop_app/features/auth/presentation/views/forget_pass_view.dart';
+import 'package:coffe_shop_app/features/details/data/repo/stripe_payment_repo.dart';
+import 'package:coffe_shop_app/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_cubit.dart';
 import 'package:coffe_shop_app/features/details/presentation/views/details_screen.dart';
 import 'package:coffe_shop_app/features/home/data/repo/home_repo_impl.dart';
 import 'package:coffe_shop_app/features/home/presentation/controller/coffe_cubit/cofee_cubit.dart';
@@ -52,10 +54,21 @@ class AppRouters {
           builder: (_) => const ForgetPassView(),
         );
       case Routing.detailsScreen:
-      final coffeeID = settings.arguments as int;
+        final coffeeID = settings.arguments as int;
         return MaterialPageRoute(
-            builder: (_) => BlocProvider(
-                  create: (context) => DetailCubit(detailRepoImpl: getIt<DetailRepoImpl>())..getCoffeeItem(coffeeID: coffeeID),
+            builder: (_) => MultiBlocProvider(
+                  providers: [
+                    BlocProvider(
+                      create: (context) =>
+                          DetailCubit(detailRepoImpl: getIt<DetailRepoImpl>())
+                            ..getCoffeeItem(coffeeID: coffeeID),
+                    ),
+                    BlocProvider(
+                      create: (context) => StripePaymentCubit(
+                        getIt<StripePaymentRepo>(),
+                      ),
+                    ),
+                  ],
                   child: const DetailsScreen(),
                 ));
       default:

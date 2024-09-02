@@ -12,7 +12,6 @@ class CoffeModel {
   final int roastLevel;
   final String imageUrl;
 
-
   CoffeModel(
       {required this.name,
       required this.description,
@@ -23,8 +22,7 @@ class CoffeModel {
       required this.grindOption,
       required this.roastLevel,
       required this.id,
-      required this.imageUrl
-      });
+      required this.imageUrl});
 
   factory CoffeModel.fromJson(json) {
     // log( json['description']);
@@ -33,12 +31,11 @@ class CoffeModel {
         price: json['price'].toString(),
         region: json['region'],
         weight: json['weight'].toString(),
-        flavorProfile: json['flavor_profile'] ,
+        flavorProfile: json['flavor_profile'],
         grindOption: json['grind_option'],
         roastLevel: json['roast_level'],
         imageUrl: json['image_url'],
         name: json['name'],
-        id: json['id']
-        );
+        id: json['id']);
   }
 }

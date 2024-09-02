@@ -3,7 +3,6 @@ import 'package:coffe_shop_app/core/global_controller/change_language_cubit/chan
 import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
 class ChangeLanguageCubit extends Cubit<ChangeLanguageState> {
   ChangeLanguageCubit() : super(ChangeLanguageInitial());
   static ChangeLanguageCubit get(context) => BlocProvider.of(context);

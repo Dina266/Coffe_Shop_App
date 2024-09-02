@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 
-import '../../../../core/utils/errors/failure.dart';
+import '../../../../core/errors/failure.dart';
 import '../entits/user_entity.dart';
 
 abstract class AuthRepo {
