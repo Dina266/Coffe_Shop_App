@@ -1,6 +1,8 @@
 import 'package:coffe_shop_app/core/cache/cache_helper.dart';
 import 'package:coffe_shop_app/core/services/api_services.dart';
+import 'package:coffe_shop_app/core/services/database_service.dart';
 import 'package:coffe_shop_app/core/services/firebase_auth_service.dart';
+import 'package:coffe_shop_app/core/services/firebase_store_service.dart';
 import 'package:coffe_shop_app/core/services/stripe_services.dart';
 import 'package:coffe_shop_app/features/details/data/repo/stripe_payment_repo.dart';
 import 'package:coffe_shop_app/features/details/data/repo/stripe_payment_repo_impl.dart';
@@ -19,9 +21,13 @@ void setUpGetIt() {
   getIt.registerSingleton<FirebaseAuthService>(
     FirebaseAuthService(),
   );
+  getIt.registerSingleton<DatabaseService>(
+    FirebaseStoreService(),
+  );
   getIt.registerSingleton<AuthRepo>(
     AuthRepoImpl(
       firebaseAuthService: getIt.get<FirebaseAuthService>(),
+      databaseService: getIt.get<DatabaseService>(),
     ),
   );
   getIt.registerLazySingleton(() => CacheHelper());
