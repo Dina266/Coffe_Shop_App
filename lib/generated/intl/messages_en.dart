@@ -22,6 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "addIns": MessageLookupByLibrary.simpleMessage("Add-Ins"),
+        "addInsLessIce": MessageLookupByLibrary.simpleMessage("Less Ice"),
+        "addInsMoreIce": MessageLookupByLibrary.simpleMessage("More Ice"),
+        "addInsNormalIce": MessageLookupByLibrary.simpleMessage("Normal Ice"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "creamer": MessageLookupByLibrary.simpleMessage("Creamer"),
+        "creamerCaramel": MessageLookupByLibrary.simpleMessage("Caramel"),
+        "creamerOatmilk": MessageLookupByLibrary.simpleMessage("Oatmilk"),
+        "creamerVanilla": MessageLookupByLibrary.simpleMessage("Vanilla"),
+        "cupSize": MessageLookupByLibrary.simpleMessage("Cup Size"),
+        "cupSizeLarge": MessageLookupByLibrary.simpleMessage("Large"),
+        "cupSizeMedium": MessageLookupByLibrary.simpleMessage("Medium"),
+        "cupSizeSmall": MessageLookupByLibrary.simpleMessage("Small"),
+        "flavor": MessageLookupByLibrary.simpleMessage("Flavor"),
+        "flavorSubtitle": MessageLookupByLibrary.simpleMessage("Pumpkin Spice"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "onboardingOneDesc": MessageLookupByLibrary.simpleMessage(
             "You want your drink and you want it your way so be bold and customize the way that makes you the happiest!"),
@@ -35,6 +50,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "We\'ve crafted a quick and easy way for you to order your favorite coffee or treats thats fast!"),
         "onboardingTwoTitle": MessageLookupByLibrary.simpleMessage(
             "No time to waste when you need your coffee"),
-        "skip": MessageLookupByLibrary.simpleMessage("Skip")
+        "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "sweetener": MessageLookupByLibrary.simpleMessage("Sweetener"),
+        "sweetener_subtitle":
+            MessageLookupByLibrary.simpleMessage("Splenda® packet"),
+        "whats_included":
+            MessageLookupByLibrary.simpleMessage("What\'s included")
       };
 }

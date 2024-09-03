@@ -1,4 +1,3 @@
-
 import 'package:coffe_shop_app/core/routes/routing.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/helpers/extentions.dart';
@@ -9,7 +8,8 @@ class CustomCategoryGridItem extends StatelessWidget {
   final String label;
   final int id;
 
-  const CustomCategoryGridItem({super.key, required this.image, required this.label, required this.id});
+  const CustomCategoryGridItem(
+      {super.key, required this.image, required this.label, required this.id});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class CustomCategoryGridItem extends StatelessWidget {
         context.pushNamed(Routing.detailsScreen, argument: id);
       },
       child: SizedBox(
-        width: 150,  
+        width: 150,
         height: 400,
         child: Card(
           color: Colors.white,
@@ -30,7 +30,10 @@ class CustomCategoryGridItem extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Expanded(
-                child: Image.network(image , height: 80,),
+                child: Image.network(
+                  image,
+                  height: 80,
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),

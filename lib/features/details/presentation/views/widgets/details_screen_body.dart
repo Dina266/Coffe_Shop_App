@@ -15,9 +15,7 @@ class DetailsScreenBody extends StatelessWidget {
             child: Text(state.eMessage),
           ),
         );
-        
       } else if (state is DetailLoadedState) {
-
         return DetailScreenBodyItem(
           coffeeModel: state.coffeModel,
         );

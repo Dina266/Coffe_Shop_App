@@ -14,7 +14,7 @@ class OnboardingPageView extends StatelessWidget {
     return Expanded(
       child: PageView.builder(
         controller: OnboardingCubit.of(context).pageController,
-        itemCount:OnboardingCubit.of(context).onboardingData.length,
+        itemCount: OnboardingCubit.of(context).onboardingData.length,
         itemBuilder: (context, index) {
           return Column(
             children: [
@@ -23,14 +23,15 @@ class OnboardingPageView extends StatelessWidget {
                 height: 255,
                 width: 255,
               ),
-              const SizedBox(height: 100),
+              const SizedBox(height: 60),
               Text(
                 OnboardingCubit.of(context).onboardingData[index]['title']!,
                 style: AppStyle.bold28,
               ),
               const SizedBox(height: 16),
               Text(
-                OnboardingCubit.of(context).onboardingData[index]['description']!,
+                OnboardingCubit.of(context).onboardingData[index]
+                    ['description']!,
                 style: AppStyle.medium16,
               ),
             ],

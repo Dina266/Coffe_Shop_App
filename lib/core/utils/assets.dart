@@ -1,6 +1,6 @@
 class Assets {
   Assets._();
-  
+
   /// Assets for imagesAccount
   /// assets/images/account.svg
   static const String imagesAccount = "assets/images/account.svg";
@@ -59,7 +59,8 @@ class Assets {
 
   /// Assets for imagesOnboardingThree
   /// assets/images/onboarding_three.png
-  static const String imagesOnboardingThree = "assets/images/onboarding_three.png";
+  static const String imagesOnboardingThree =
+      "assets/images/onboarding_three.png";
 
   /// Assets for imagesOnboardingTwo
   /// assets/images/onboarding_two.png
@@ -87,10 +88,10 @@ class Assets {
 
   /// Assets for imagesSplashBackground
   /// assets/images/splash_background.png
-  static const String imagesSplashBackground = "assets/images/splash_background.png";
+  static const String imagesSplashBackground =
+      "assets/images/splash_background.png";
 
   /// Assets for imagesTransaction
   /// assets/images/transaction.svg
   static const String imagesTransaction = "assets/images/transaction.svg";
 }
-
