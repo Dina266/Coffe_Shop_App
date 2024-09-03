@@ -1,9 +1,9 @@
 import 'dart:developer';
 
 import 'package:coffe_shop_app/core/services/api_services.dart';
-import 'package:coffe_shop_app/core/utils/stripe_keys.dart';
 import 'package:coffe_shop_app/features/details/data/models/create_payment_intent/create_payment_intent.dart';
 import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 
 class StripeServices {
@@ -17,7 +17,7 @@ class StripeServices {
       body: paymentUserInput.toJson(),
       url: 'https://api.stripe.com/v1/payment_intents',
       contentType: 'application/x-www-form-urlencoded',
-      token: StripeKeys.secretKey,
+      token: dotenv.env['SECRET_KEY']!,
     );
     log('PaymentIntent: ${paymentIntent.statusCode}');
 
