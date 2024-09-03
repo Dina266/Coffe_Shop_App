@@ -1,4 +1,3 @@
-
 import 'package:coffe_shop_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -33,9 +32,8 @@ class _QuantityCounterState extends State<QuantityCounter> {
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(width: 1, color: Colors.grey)),
-      padding: const EdgeInsets.symmetric(
-          horizontal: 8),
-      height: 40, 
+      padding: const EdgeInsets.symmetric(horizontal: 8),
+      height: 40,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -47,11 +45,11 @@ class _QuantityCounterState extends State<QuantityCounter> {
             '$_count',
             style: const TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 16, 
+              fontSize: 16,
             ),
           ),
           IconButton(
-            icon:  const Icon(Icons.add, color: AppColors.splashBackground),
+            icon: const Icon(Icons.add, color: AppColors.splashBackground),
             onPressed: _increment,
           ),
         ],

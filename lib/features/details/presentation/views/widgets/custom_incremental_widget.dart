@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import 'custom_quantity_counter.dart';
@@ -37,9 +36,7 @@ class CustomIncrementalItems extends StatelessWidget {
                   subTitle,
                   style: AppStyle.semiBold16,
                 ),
-                
                 const QuantityCounter(),
-                
               ],
             ),
           ),

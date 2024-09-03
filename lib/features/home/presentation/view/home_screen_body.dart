@@ -22,7 +22,6 @@ class HomeScreenBody extends StatelessWidget {
             child: Text(state.eMessage),
           ),
         );
-        
       } else if (state is CofeeLoadedState) {
         log('iam body');
 

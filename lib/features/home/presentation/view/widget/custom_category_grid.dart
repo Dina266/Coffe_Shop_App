@@ -8,13 +8,14 @@ class CustomCategoryGrid extends StatelessWidget {
   final String title;
   final List<CoffeModel> coffeModel;
 
-  
   const CustomCategoryGrid(
-      {super.key, this.isLoading = true, required this.title, required this.coffeModel});
+      {super.key,
+      this.isLoading = true,
+      required this.title,
+      required this.coffeModel});
 
   @override
   Widget build(BuildContext context) {
-    
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -44,8 +45,7 @@ class CustomCategoryGrid extends StatelessWidget {
                 mainAxisSpacing: 16.0,
                 crossAxisSpacing: 16.0,
               ),
-              itemCount:
-                  coffeModel.length,
+              itemCount: coffeModel.length,
               itemBuilder: (context, index) {
                 return CustomCategoryGridItem(
                   image: coffeModel[index].imageUrl,

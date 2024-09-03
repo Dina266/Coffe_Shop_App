@@ -17,9 +17,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     });
   }
 
-  final List _pages = const [
-    
-  ];
+  final List _pages = const [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +25,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         child: _pages.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items:const [
+        items: const [
           // BottomNavigationBarItem(
           //   // icon: AppIcons.iconGrid(Colors.grey),
           //   // activeIcon: AppIcons.iconGrid(AppColor.selectedViolet),

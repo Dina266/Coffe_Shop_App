@@ -2,7 +2,7 @@ import 'package:coffe_shop_app/core/services/firebase_auth_service.dart';
 import 'package:coffe_shop_app/features/auth/domain/repos/auth_repo.dart';
 import 'package:dartz/dartz.dart';
 
-import '../../../../core/utils/errors/failure.dart';
+import '../../../../core/errors/failure.dart';
 import '../../domain/entits/user_entity.dart';
 import '../models/user_model.dart';
 
