@@ -62,7 +62,10 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-        const CustomIncrementalItems(title: "Flavor", subTitle: "Pumkin Spice"),
+
+        CustomIncrementalItems(
+            title: S.of(context).flavor, subTitle: S.of(context).flavorSubtitle),
+
         const SizedBox(
           height: 24,
         ),
