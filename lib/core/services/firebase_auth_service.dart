@@ -30,7 +30,7 @@ class FirebaseAuthService {
         );
       }
       return left(
-        AuthFailure('somthing went wrong'),
+        AuthFailure('حدث خطأ ما'),
       );
     }
   }
@@ -52,7 +52,7 @@ class FirebaseAuthService {
         );
       }
       return left(
-        AuthFailure('somthing went wrong'),
+        AuthFailure('حدث خطأ ما'),
       );
     }
   }
@@ -61,7 +61,15 @@ class FirebaseAuthService {
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
     } catch (e) {
-      AuthFailure('somthing went wrong');
+      AuthFailure('حدث خطأ ما');
+    }
+  }
+
+  Future deleteUser() async {
+    try {
+      await FirebaseAuth.instance.currentUser!.delete();
+    } catch (e) {
+      AuthFailure('حدث خطأ ما');
     }
   }
 }

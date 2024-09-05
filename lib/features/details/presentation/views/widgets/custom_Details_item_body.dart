@@ -1,4 +1,3 @@
-import 'package:coffe_shop_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import '../../../../home/data/models/coffe_model.dart';
@@ -15,43 +14,31 @@ class CustomDetailsItem extends StatefulWidget {
 }
 
 class _CustomDetailsItemState extends State<CustomDetailsItem> {
-  String cupSize = S.current.cupSizeLarge;
-  String addIns = S.current.addInsNormalIce;
-  String creamer = S.current.creamerOatmilk;
+  String cupSize = 'Large';
+  String addIns = 'Normal Ice';
+  String creamer = 'Oatmilk';
   int sweetenerCount = 0;
   int flavorCount = 0;
 
-  List<String> cupSizes = [
-    S.current.cupSizeSmall,
-    S.current.cupSizeLarge,
-    S.current.cupSizeMedium
-  ];
-  List<String> addInses = [
-    S.current.addInsNormalIce,
-    S.current.addInsMoreIce,
-    S.current.addInsLessIce
-  ];
-  List<String> creamers = [
-    S.current.creamerOatmilk,
-    S.current.creamerCaramel,
-    S.current.creamerVanilla
-  ];
+  List<String> cupSizes = ['Small', 'Medium', 'Large'];
+  List<String> addInses = ['Normal Ice', 'more Ice', 'Less Ice'];
+  List<String> creamers = ['Oatmilk', 'Carameil', 'Vanilla'];
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Padding(
-          padding: const EdgeInsets.all(18.0),
+        const Padding(
+          padding: EdgeInsets.all(18.0),
           child: Text(
-            S.of(context).whats_included,
+            "What's included",
             style: AppStyle.bold18,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+        const Padding(
+          padding: EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-            S.of(context).cupSize,
+            'Cup Size',
             style: AppStyle.bold16,
           ),
         ),
@@ -59,10 +46,10 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+        const Padding(
+          padding: EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-            S.of(context).addIns,
+            'Add-Ins',
             style: AppStyle.bold16,
           ),
         ),
@@ -70,21 +57,22 @@ class _CustomDetailsItemState extends State<CustomDetailsItem> {
         const SizedBox(
           height: 24,
         ),
-        CustomIncrementalItems(
-            title: S.of(context).sweetener,
-            subTitle: S.of(context).sweetener_subtitle),
+        const CustomIncrementalItems(
+            title: "Sweetener", subTitle: "Splenda® packet"),
         const SizedBox(
           height: 24,
         ),
+
         CustomIncrementalItems(
             title: S.of(context).flavor, subTitle: S.of(context).flavorSubtitle),
+
         const SizedBox(
           height: 24,
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
+        const Padding(
+          padding: EdgeInsets.only(left: 26.0, right: 20, bottom: 15),
           child: Text(
-            S.of(context).creamer,
+            'Creamer',
             style: AppStyle.bold16,
           ),
         ),
