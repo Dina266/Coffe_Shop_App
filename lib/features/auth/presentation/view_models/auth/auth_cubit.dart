@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:coffe_shop_app/features/auth/domain/entits/user_entity.dart';
-import 'package:coffe_shop_app/features/auth/domain/repos/auth_repo.dart';
+import 'package:coffee_corner/features/auth/domain/entits/user_entity.dart';
+import 'package:coffee_corner/features/auth/domain/repos/auth_repo.dart';
 import 'package:meta/meta.dart';
 
 part 'auth_state.dart';

@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/generated/l10n.dart';
+import 'package:coffee_corner/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import '../../../../home/data/models/coffe_model.dart';

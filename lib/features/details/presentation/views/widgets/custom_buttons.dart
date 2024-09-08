@@ -1,5 +1,5 @@
-import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
-import 'package:coffe_shop_app/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_cubit.dart';
+import 'package:coffee_corner/features/details/data/models/payment_user_input.dart';
+import 'package:coffee_corner/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_cubit.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../home/data/models/coffe_model.dart';

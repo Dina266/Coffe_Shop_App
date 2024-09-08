@@ -1,12 +1,12 @@
-import 'package:coffe_shop_app/core/cache/cache_helper.dart';
-import 'package:coffe_shop_app/core/helpers/extentions.dart';
-import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
-import 'package:coffe_shop_app/core/routes/routing.dart';
-import 'package:coffe_shop_app/core/utils/app_colors.dart';
-import 'package:coffe_shop_app/core/utils/app_styles.dart';
-import 'package:coffe_shop_app/features/onboarding/presentation/view/widgets/onboarding_bottom_controller.dart';
-import 'package:coffe_shop_app/features/onboarding/presentation/view/widgets/onboarding_page_view.dart';
-import 'package:coffe_shop_app/generated/l10n.dart';
+import 'package:coffee_corner/core/cache/cache_helper.dart';
+import 'package:coffee_corner/core/helpers/extentions.dart';
+import 'package:coffee_corner/core/helpers/get_it_function.dart';
+import 'package:coffee_corner/core/routes/routing.dart';
+import 'package:coffee_corner/core/utils/app_colors.dart';
+import 'package:coffee_corner/core/utils/app_styles.dart';
+import 'package:coffee_corner/features/onboarding/presentation/view/widgets/onboarding_bottom_controller.dart';
+import 'package:coffee_corner/features/onboarding/presentation/view/widgets/onboarding_page_view.dart';
+import 'package:coffee_corner/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/cache/cache_keys.dart';

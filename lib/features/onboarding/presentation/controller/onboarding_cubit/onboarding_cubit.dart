@@ -1,11 +1,11 @@
-import 'package:coffe_shop_app/core/cache/cache_helper.dart';
-import 'package:coffe_shop_app/core/cache/cache_keys.dart';
-import 'package:coffe_shop_app/core/helpers/extentions.dart';
-import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
-import 'package:coffe_shop_app/core/routes/routing.dart';
-import 'package:coffe_shop_app/core/utils/assets.dart';
-import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_state.dart';
-import 'package:coffe_shop_app/generated/l10n.dart';
+import 'package:coffee_corner/core/cache/cache_helper.dart';
+import 'package:coffee_corner/core/cache/cache_keys.dart';
+import 'package:coffee_corner/core/helpers/extentions.dart';
+import 'package:coffee_corner/core/helpers/get_it_function.dart';
+import 'package:coffee_corner/core/routes/routing.dart';
+import 'package:coffee_corner/core/utils/assets.dart';
+import 'package:coffee_corner/features/onboarding/presentation/controller/onboarding_cubit/onboarding_state.dart';
+import 'package:coffee_corner/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,6 +1,6 @@
-import 'package:coffe_shop_app/core/cache/cache_helper.dart';
-import 'package:coffe_shop_app/core/helpers/bloc_observer.dart';
-import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
+import 'package:coffee_corner/core/cache/cache_helper.dart';
+import 'package:coffee_corner/core/helpers/bloc_observer.dart';
+import 'package:coffee_corner/core/helpers/get_it_function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';

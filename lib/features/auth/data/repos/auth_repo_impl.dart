@@ -1,5 +1,5 @@
-import 'package:coffe_shop_app/core/services/firebase_auth_service.dart';
-import 'package:coffe_shop_app/features/auth/domain/repos/auth_repo.dart';
+import 'package:coffee_corner/core/services/firebase_auth_service.dart';
+import 'package:coffee_corner/features/auth/domain/repos/auth_repo.dart';
 import 'package:dartz/dartz.dart';
 
 import '../../../../core/errors/failure.dart';

@@ -1,8 +1,8 @@
 import 'dart:developer';
 
-import 'package:coffe_shop_app/core/services/api_services.dart';
-import 'package:coffe_shop_app/features/details/data/models/create_payment_intent/create_payment_intent.dart';
-import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
+import 'package:coffee_corner/core/services/api_services.dart';
+import 'package:coffee_corner/features/details/data/models/create_payment_intent/create_payment_intent.dart';
+import 'package:coffee_corner/features/details/data/models/payment_user_input.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 

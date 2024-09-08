@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/core/utils/app_colors.dart';
+import 'package:coffee_corner/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable

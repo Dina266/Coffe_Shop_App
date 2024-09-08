@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/core/cache/cache_keys.dart';
+import 'package:coffee_corner/core/cache/cache_keys.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CacheHelper {

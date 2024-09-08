@@ -1,5 +1,5 @@
-import 'package:coffe_shop_app/core/utils/app_colors.dart';
-import 'package:coffe_shop_app/core/utils/app_styles.dart';
+import 'package:coffee_corner/core/utils/app_colors.dart';
+import 'package:coffee_corner/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {

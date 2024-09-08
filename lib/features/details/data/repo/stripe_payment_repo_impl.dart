@@ -1,6 +1,6 @@
-import 'package:coffe_shop_app/core/services/stripe_services.dart';
-import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
-import 'package:coffe_shop_app/features/details/data/repo/stripe_payment_repo.dart';
+import 'package:coffee_corner/core/services/stripe_services.dart';
+import 'package:coffee_corner/features/details/data/models/payment_user_input.dart';
+import 'package:coffee_corner/features/details/data/repo/stripe_payment_repo.dart';
 import 'package:dartz/dartz.dart';
 
 class StripePaymentRepoImpl extends StripePaymentRepo {

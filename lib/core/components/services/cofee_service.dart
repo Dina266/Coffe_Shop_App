@@ -1,5 +1,5 @@
 import 'dart:developer';
-import 'package:coffe_shop_app/features/home/data/models/coffe_model.dart';
+import 'package:coffee_corner/features/home/data/models/coffe_model.dart';
 import 'package:dio/dio.dart';
 
 class CoffeService {

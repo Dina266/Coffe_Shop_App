@@ -1,6 +1,6 @@
-import 'package:coffe_shop_app/core/utils/app_colors.dart';
-import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
-import 'package:coffe_shop_app/features/onboarding/presentation/view/widgets/custom_onbarding_button.dart';
+import 'package:coffee_corner/core/utils/app_colors.dart';
+import 'package:coffee_corner/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
+import 'package:coffee_corner/features/onboarding/presentation/view/widgets/custom_onbarding_button.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
