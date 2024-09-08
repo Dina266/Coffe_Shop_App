@@ -108,6 +108,6 @@ flutter_assets:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/onboarding_three.png" 
+  image_path: "assets/images/app_logo.png" 
   adaptive_icon_background: "#ffffff" 
-  adaptive_icon_foreground: "assets/images/onboarding_three.png"
+  adaptive_icon_foreground: "assets/images/app_logo.png"
