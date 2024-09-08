@@ -1,9 +1,9 @@
 import 'dart:developer';
 
-import 'package:coffe_shop_app/features/home/data/models/coffe_model.dart';
-import 'package:coffe_shop_app/features/home/presentation/controller/coffe_cubit/cofee_cubit.dart';
-import 'package:coffe_shop_app/features/home/presentation/controller/coffe_cubit/cofee_state.dart';
-import 'package:coffe_shop_app/features/home/presentation/view/widget/custom_shimmer_placholder.dart';
+import 'package:coffee_corner/features/home/data/models/coffe_model.dart';
+import 'package:coffee_corner/features/home/presentation/controller/coffe_cubit/cofee_cubit.dart';
+import 'package:coffee_corner/features/home/presentation/controller/coffe_cubit/cofee_state.dart';
+import 'package:coffee_corner/features/home/presentation/view/widget/custom_shimmer_placholder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'widget/custom_app_bar.dart';

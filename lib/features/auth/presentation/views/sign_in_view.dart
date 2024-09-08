@@ -1,7 +1,7 @@
-import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
-import 'package:coffe_shop_app/core/utils/app_colors.dart';
-import 'package:coffe_shop_app/features/auth/domain/repos/auth_repo.dart';
-import 'package:coffe_shop_app/features/auth/presentation/view_models/auth/auth_cubit.dart';
+import 'package:coffee_corner/core/helpers/get_it_function.dart';
+import 'package:coffee_corner/core/utils/app_colors.dart';
+import 'package:coffee_corner/features/auth/domain/repos/auth_repo.dart';
+import 'package:coffee_corner/features/auth/presentation/view_models/auth/auth_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

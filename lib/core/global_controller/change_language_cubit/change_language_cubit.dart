@@ -1,6 +1,6 @@
-import 'package:coffe_shop_app/core/cache/cache_helper.dart';
-import 'package:coffe_shop_app/core/global_controller/change_language_cubit/change_language_state.dart';
-import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
+import 'package:coffee_corner/core/cache/cache_helper.dart';
+import 'package:coffee_corner/core/global_controller/change_language_cubit/change_language_state.dart';
+import 'package:coffee_corner/core/helpers/get_it_function.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ChangeLanguageCubit extends Cubit<ChangeLanguageState> {

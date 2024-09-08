@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:coffe_shop_app/features/details/data/repo/detail_repo_impl.dart';
-import 'package:coffe_shop_app/features/home/data/models/coffe_model.dart';
+import 'package:coffee_corner/features/details/data/repo/detail_repo_impl.dart';
+import 'package:coffee_corner/features/home/data/models/coffe_model.dart';
 import 'package:meta/meta.dart';
 
 part 'detail_state.dart';

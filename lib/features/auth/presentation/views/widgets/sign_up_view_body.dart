@@ -1,5 +1,5 @@
-import 'package:coffe_shop_app/core/utils/app_styles.dart';
-import 'package:coffe_shop_app/core/utils/assets.dart';
+import 'package:coffee_corner/core/utils/app_styles.dart';
+import 'package:coffee_corner/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

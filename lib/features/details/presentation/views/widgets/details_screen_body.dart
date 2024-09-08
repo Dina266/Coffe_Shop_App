@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/features/details/presentation/controller/detail_cubit/detail_cubit.dart';
+import 'package:coffee_corner/features/details/presentation/controller/detail_cubit/detail_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'detail_screen_body_item.dart';

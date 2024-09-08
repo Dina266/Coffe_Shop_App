@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/features/home/data/models/coffe_model.dart';
+import 'package:coffee_corner/features/home/data/models/coffe_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import 'custom_category_grid_item.dart';

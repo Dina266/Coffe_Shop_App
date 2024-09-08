@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/core/routes/routing.dart';
+import 'package:coffee_corner/core/routes/routing.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/helpers/extentions.dart';
 import '../../../../../core/utils/app_styles.dart';

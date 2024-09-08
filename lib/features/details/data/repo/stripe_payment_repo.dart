@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
+import 'package:coffee_corner/features/details/data/models/payment_user_input.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class StripePaymentRepo {

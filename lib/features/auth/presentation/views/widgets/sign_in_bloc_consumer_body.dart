@@ -1,6 +1,6 @@
-import 'package:coffe_shop_app/core/routes/routing.dart';
-import 'package:coffe_shop_app/core/utils/app_colors.dart';
-import 'package:coffe_shop_app/features/auth/presentation/views/widgets/sign_in_view_body.dart';
+import 'package:coffee_corner/core/routes/routing.dart';
+import 'package:coffee_corner/core/utils/app_colors.dart';
+import 'package:coffee_corner/features/auth/presentation/views/widgets/sign_in_view_body.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

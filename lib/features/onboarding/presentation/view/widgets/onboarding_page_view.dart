@@ -1,6 +1,6 @@
-import 'package:coffe_shop_app/core/utils/app_styles.dart';
+import 'package:coffee_corner/core/utils/app_styles.dart';
 
-import 'package:coffe_shop_app/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
+import 'package:coffee_corner/features/onboarding/presentation/controller/onboarding_cubit/onboarding_cubit.dart';
 
 import 'package:flutter/material.dart';
 
