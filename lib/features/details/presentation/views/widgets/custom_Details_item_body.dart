@@ -4,6 +4,7 @@ import '../../../../home/data/models/coffe_model.dart';
 import 'custom_buttons.dart';
 import 'custom_drop_down_menu.dart';
 import 'custom_incremental_widget.dart';
+import 'package:coffe_shop_app/generated/l10n.dart';
 
 class CustomDetailsItem extends StatefulWidget {
   final CoffeModel coffeeModel;
