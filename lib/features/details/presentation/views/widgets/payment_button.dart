@@ -34,7 +34,7 @@ class PaymentButton extends StatelessWidget {
           QuickAlert.show(
             context: context,
             type: QuickAlertType.error,
-            title: 'Something went wrong, please try again',
+            title: state.error,
           );
         }
       },
