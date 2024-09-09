@@ -13,6 +13,8 @@ import 'package:logger/logger.dart';
 import '../../features/auth/data/repos/auth_repo_impl.dart';
 import '../../features/auth/domain/repos/auth_repo.dart';
 import '../../features/details/data/repo/detail_repo_impl.dart';
+import '../services/database_service.dart';
+import '../services/firebase_store_service.dart';
 
 final getIt = GetIt.asNewInstance();
 

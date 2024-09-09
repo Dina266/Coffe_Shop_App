@@ -1,13 +1,11 @@
 
 import 'package:coffee_corner/generated/l10n.dart';
-
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_styles.dart';
 import '../../../../home/data/models/coffe_model.dart';
 import 'custom_buttons.dart';
 import 'custom_drop_down_menu.dart';
 import 'custom_incremental_widget.dart';
-import 'package:coffe_shop_app/generated/l10n.dart';
 
 class CustomDetailsItem extends StatefulWidget {
   final CoffeModel coffeeModel;

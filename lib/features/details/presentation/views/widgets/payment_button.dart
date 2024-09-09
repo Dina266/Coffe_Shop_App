@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:coffe_shop_app/core/cache/cache_helper.dart';
-import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
-import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
-import 'package:coffe_shop_app/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_cubit.dart';
-import 'package:coffe_shop_app/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_state.dart';
+import 'package:coffee_corner/core/cache/cache_helper.dart';
+import 'package:coffee_corner/core/helpers/get_it_function.dart';
+import 'package:coffee_corner/features/details/data/models/payment_user_input.dart';
+import 'package:coffee_corner/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_cubit.dart';
+import 'package:coffee_corner/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quickalert/quickalert.dart';
