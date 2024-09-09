@@ -60,8 +60,6 @@ class AuthRepoImpl implements AuthRepo {
             userId: user.uid,
           ),
         );
-        var stripeId = await _createUserStripeId(name: name, email: email);
-      await getIt<CacheHelper>().saveStripeUserId(stripeId: stripeId);
 
         return right(UserModel.fromfirbase(user));
       },
