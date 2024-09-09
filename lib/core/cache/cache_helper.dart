@@ -30,4 +30,13 @@ class CacheHelper {
   String? getCurrentLanguage() {
     return sharedPreferences.getString(CacheKeys.currentLanguage);
   }
+
+  Future<void> saveStripeUserId({required String stripeId}) async {
+   await sharedPreferences.setString(CacheKeys.stripeId, stripeId);
+  }
+
+    String? getStripeUserId() {
+    return sharedPreferences.getString(CacheKeys.stripeId);
+  }
+
 }

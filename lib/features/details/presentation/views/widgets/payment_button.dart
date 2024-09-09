@@ -1,3 +1,7 @@
+import 'dart:developer';
+
+import 'package:coffe_shop_app/core/cache/cache_helper.dart';
+import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
 import 'package:coffe_shop_app/features/details/data/models/payment_user_input.dart';
 import 'package:coffe_shop_app/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_cubit.dart';
 import 'package:coffe_shop_app/features/details/presentation/controller/stripe_payment_cubit/stripe_payment_state.dart';
@@ -26,6 +30,7 @@ class PaymentButton extends StatelessWidget {
             title: 'Success',
           );
         } else if (state is StripePaymentFailure) {
+          log(state.error);
           QuickAlert.show(
             context: context,
             type: QuickAlertType.error,
@@ -36,8 +41,11 @@ class PaymentButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: () {
           StripePaymentCubit.get(context).makePayment(
-            paymentUserInput:
-                PaymentUserInput(amount: coffeModel.price, currency: 'usd'),
+            paymentUserInput: PaymentUserInput(
+              amount: coffeModel.price,
+              currency: 'usd',
+              customerId: getIt<CacheHelper>().getStripeUserId()!,
+            ),
           );
         },
         style: ElevatedButton.styleFrom(

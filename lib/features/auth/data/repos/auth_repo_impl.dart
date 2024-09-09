@@ -1,7 +1,13 @@
+import 'dart:developer';
+
+import 'package:coffe_shop_app/core/cache/cache_helper.dart';
+import 'package:coffe_shop_app/core/helpers/get_it_function.dart';
+import 'package:coffe_shop_app/core/services/api_services.dart';
 import 'package:coffe_shop_app/core/services/database_service.dart';
 import 'package:coffe_shop_app/core/services/firebase_auth_service.dart';
 import 'package:coffe_shop_app/features/auth/domain/repos/auth_repo.dart';
 import 'package:dartz/dartz.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import '../../../../core/errors/failure.dart';
 import '../../../../core/utils/backend_points.dart';
@@ -24,6 +30,8 @@ class AuthRepoImpl implements AuthRepo {
       email: email,
       password: password,
     );
+    var stripeId = await _createUserStripeId(email: email);
+  await getIt<CacheHelper>().saveStripeUserId(stripeId: stripeId);
     return response.fold(
       (failure) => left(failure),
       (user) => right(
@@ -52,6 +60,9 @@ class AuthRepoImpl implements AuthRepo {
             userId: user.uid,
           ),
         );
+        var stripeId = await _createUserStripeId(name: name, email: email);
+      await getIt<CacheHelper>().saveStripeUserId(stripeId: stripeId);
+
         return right(UserModel.fromfirbase(user));
       },
     );
@@ -73,6 +84,24 @@ class AuthRepoImpl implements AuthRepo {
     } on Exception catch (e) {
       print(e);
       firebaseAuthService.deleteUser();
+    }
+  }
+
+  Future _createUserStripeId({String? name, String? email}) async {
+    try {
+      var response = await getIt<ApiServices>().post(
+        body: {
+          if (email != null) 'email': email,
+          if (name != null) 'name': name,
+        },
+        contentType: 'application/x-www-form-urlencoded',
+        url: 'https://api.stripe.com/v1/customers',
+        token: dotenv.env['SECRET_KEY']!,
+      );
+      log('StripeId: ${response.data['id']}');
+      return response.data['id'];
+    } catch (e) {
+      log(e.toString());
     }
   }
 }
