@@ -21,5 +21,38 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "addIns": MessageLookupByLibrary.simpleMessage("الإضافات"),
+        "addInsLessIce": MessageLookupByLibrary.simpleMessage("ثلج أقل"),
+        "addInsMoreIce":
+            MessageLookupByLibrary.simpleMessage("المزيد من الثلج"),
+        "addInsNormalIce": MessageLookupByLibrary.simpleMessage("ثلج عادي"),
+        "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "creamer": MessageLookupByLibrary.simpleMessage("كريمه"),
+        "creamerCaramel": MessageLookupByLibrary.simpleMessage("كراميل"),
+        "creamerOatmilk": MessageLookupByLibrary.simpleMessage("حليب الشوفان"),
+        "creamerVanilla": MessageLookupByLibrary.simpleMessage("فانيليا"),
+        "cupSize": MessageLookupByLibrary.simpleMessage("حجم الكوب"),
+        "cupSizeMedium": MessageLookupByLibrary.simpleMessage("متوسط"),
+        "cupSizeSmall": MessageLookupByLibrary.simpleMessage("صغير"),
+        "flavor": MessageLookupByLibrary.simpleMessage("النكهة"),
+        "flavorSubtitle":
+            MessageLookupByLibrary.simpleMessage("بهارات اليقطين"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "onboardingOneDesc": MessageLookupByLibrary.simpleMessage(
+            "تريد مشروبك وتريده على طريقتك لذا كن جريئًا وقم بتخصيص الطريقة التي تجعلك الأكثر سعادة!"),
+        "onboardingOneTitle": MessageLookupByLibrary.simpleMessage(
+            "اختر وقم بتخصيص مشروباتك بسهولة"),
+        "onboardingThreeDesc": MessageLookupByLibrary.simpleMessage(
+            "إذا كنت مثلنا تحب الحصول على الهدايا المجانية والمكافآت! لهذا السبب لدينا أفضل برنامج مكافآت في لعبة القهوة!"),
+        "onboardingThreeTitle": MessageLookupByLibrary.simpleMessage(
+            "من لا يحب المكافآت؟ نحن نحب المكافآت!"),
+        "onboardingTwoDesc": MessageLookupByLibrary.simpleMessage(
+            "لقد صنعنا طريقة سريعة وسهلة لك لطلب قهوتك المفضلة أو الحلويات الخاصة بك بسرعة!"),
+        "onboardingTwoTitle": MessageLookupByLibrary.simpleMessage(
+            "لا وقت للهدر عندما تحتاج إلى قهوتك"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
+        "sweetener": MessageLookupByLibrary.simpleMessage("المُحَلّي"),
+        "whats_included": MessageLookupByLibrary.simpleMessage("ماذا يشمل؟")
+      };
 }
