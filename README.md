@@ -20,7 +20,7 @@ This is a simple Coffee Shop that allows users to create orders and payment them
 
 - Change directory to the project root
     ```sh
-    cd coffee_corner
+    cd Coffe_Shop_App
     ```
 - Install the required packages
     ```sh
