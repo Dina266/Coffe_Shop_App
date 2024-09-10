@@ -39,8 +39,9 @@ This is a simple Coffee Shop that allows users to create orders and payment them
     flutter run
     ```
 
-- Video Demo
-  https://github.com/Dina266/Coffe_Shop_App/blob/main/assets/20240910-1744-31.4356105.mp4
+  ##Video Demo
+  [Watch the video](assets/20240910-1744-31.4356105.mp4)
+
 
 
 
