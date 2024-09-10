@@ -22,11 +22,17 @@ This is a simple Coffee Shop that allows users to create orders and payment them
     ```sh
     cd Coffe_Shop_App
     ```
+    
 - Install the required packages
     ```sh
     flutter pub get
     ```
-
+    
+- Change App Logo 
+    ```sh
+    flutter pub run flutter_launcher_icons:main
+    ```
+    
 - Run the app
     ```sh
     flutter run
