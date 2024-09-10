@@ -1,16 +1,41 @@
 # coffee_corner
 
-A new Flutter project.
+## Description
+This is a simple delivery app UI that allows users to create orders and track them. The app is built using Flutter and Dart using MVVM architecture pattern.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+- Users can create account , forget password , sign in
+- Users can find coffees
+- Users can create orders
+- users can payment
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+- Clone the repository
+    ```sh
+    git clone 
+    ```
+
+- Change directory to the project root
+    ```sh
+    cd coffee_corner
+    ```
+- Install the required packages
+    ```sh
+    flutter pub get
+    ```
+
+- Run the app
+    ```sh
+    flutter run
+    ```
+
+
+
+
+
+
+
+
