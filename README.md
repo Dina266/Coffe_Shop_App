@@ -40,7 +40,10 @@ This is a simple Coffee Shop that allows users to create orders and payment them
     ```
 
   ##Video Demo
-  [Watch the video](assets/20240910-1744-31.4356105.mp4)
+
+    https://github.com/user-attachments/assets/c5599a3e-e55a-4781-bac9-2e6e8e03d586
+
+
 
 
 
