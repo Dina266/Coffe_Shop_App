@@ -1,6 +1,6 @@
 {
-    "name": "coffe_shop_app",
-    "short_name": "coffe_shop_app",
+    "name": "coffee_corner",
+    "short_name": "coffee_corner",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,16 +1,47 @@
-# coffe_shop_app
+# coffee_corner
 
-A new Flutter project.
+## Description
+This is a simple Coffee Shop that allows users to create orders and payment them. The app is built using Flutter and Dart using MVVM architecture pattern, cubit , strip , Firebase , Api.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+- Users can create account , forget password , sign in
+- Users can find coffees
+- Users can create orders
+- users can payment
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+- Clone the repository
+    ```sh
+    git clone https://github.com/Dina266/Coffe_Shop_App.git
+    ```
+
+- Change directory to the project root
+    ```sh
+    cd Coffe_Shop_App
+    ```
+    
+- Install the required packages
+    ```sh
+    flutter pub get
+    ```
+    
+- Change App Logo 
+    ```sh
+    flutter pub run flutter_launcher_icons:main
+    ```
+    
+- Run the app
+    ```sh
+    flutter run
+    ```
+
+
+
+
+
+
+
+
