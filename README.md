@@ -11,6 +11,7 @@ This is a simple Coffee Shop that allows users to create orders and payment them
 - Users can find coffees
 - Users can create orders
 - users can payment
+- send email verification and email to reset password
 
 ## Installation
 - Clone the repository
@@ -37,6 +38,9 @@ This is a simple Coffee Shop that allows users to create orders and payment them
     ```sh
     flutter run
     ```
+
+- Video Demo
+  https://github.com/Dina266/Coffe_Shop_App/blob/main/assets/20240910-1744-31.4356105.mp4
 
 
 
