@@ -15,7 +15,7 @@ This is a simple Coffee Shop that allows users to create orders and payment them
 ## Installation
 - Clone the repository
     ```sh
-    git clone 
+    git clone https://github.com/Dina266/Coffe_Shop_App.git
     ```
 
 - Change directory to the project root
