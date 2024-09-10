@@ -1,7 +1,7 @@
 # coffee_corner
 
 ## Description
-This is a simple delivery app UI that allows users to create orders and track them. The app is built using Flutter and Dart using MVVM architecture pattern.
+This is a simple Coffee Shop that allows users to create orders and payment them. The app is built using Flutter and Dart using MVVM architecture pattern, cubit , strip , Firebase , Api.
 
 
 
